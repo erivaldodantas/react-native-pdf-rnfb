@@ -1,5 +1,6 @@
-# react-native-pdf
-[![npm](https://img.shields.io/npm/v/react-native-pdf.svg?style=flat-square)](https://www.npmjs.com/package/react-native-pdf)
+# react-native-pdf-rnfb
+This is a version of the react-native-pdf library with the react-native-fetch-blob instead of the react-native-fetch-blob.
+[![npm](https://img.shields.io/npm/v/react-native-pdf-rnfb.svg?style=flat-square)](https://www.npmjs.com/package/react-native-pdf-rnfb)
 
 A react native PDF view component (cross-platform support)
 
@@ -11,34 +12,34 @@ A react native PDF view component (cross-platform support)
 * double tap for zoom
 * support password protected pdf
 
-### Supported versions - React Native / react-native-pdf
+### Supported versions - React Native / react-native-pdf-rnfb
 
-> The table below shows the supported versions of React Native for different versions of `react-native-pdf`.
+> The table below shows the supported versions of React Native for different versions of `react-native-pdf-rnfb`.
 
-| react-native-pdf          |  4.x.x - 5.0.x   |      5.0.9+      |
+| react-native-pdf-rnfb          |  4.x.x - 5.0.x   |      5.0.9+      |
 | ------------------------- | :------: | :-------------: |
 | React Native              | 0.47 - 0.56  |  ^0.57  |
 
 ### Installation
-We use [`rn-fetch-blob`](https://github.com/joltup/rn-fetch-blob) to handle file system access in this package,
-So you should install react-native-pdf and rn-fetch-blob
+We use [`react-native-fetch-blob`](https://github.com/wkh237/react-native-fetch-blob) to handle file system access in this package,
+So you should install react-native-pdf-rnfb and react-native-fetch-blob
 
 ```bash
-npm install rn-fetch-blob --save
-npm install react-native-pdf --save
+npm install react-native-fetch-blob --save
+npm install react-native-pdf-rnfb --save
 
-react-native link rn-fetch-blob
-react-native link react-native-pdf
+react-native link react-native-fetch-blob
+react-native link react-native-pdf-rnfb
 ```
 
 ### FAQ
 
 Q1. After installation and running, I can not see the pdf file.  
 A1: maybe you forgot to excute ```react-native link``` or it does not run correctly.
-You can add it manually. For detail you can see the issue [`#24`](https://github.com/wonday/react-native-pdf/issues/24) and [`#2`](https://github.com/wonday/react-native-pdf/issues/2)
+You can add it manually. For detail you can see the issue [`#24`](https://github.com/wonday/react-native-pdf-rnfb/issues/24) and [`#2`](https://github.com/wonday/react-native-pdf-rnfb/issues/2)
 
 Q2. When running, it shows ```'Pdf' has no propType for native prop RCTPdf.acessibilityLabel of native type 'String'```  
-A2. Your react-native version is too old, please upgrade it to 0.47.0+ see also [`#39`](https://github.com/wonday/react-native-pdf/issues/39)
+A2. Your react-native version is too old, please upgrade it to 0.47.0+ see also [`#39`](https://github.com/wonday/react-native-pdf-rnfb/issues/39)
 
 Q3. When I run the example app I get a white screen / the loading bar isn't progressing on IOS.  
 A3. Check your uri, if you hit a pdf that is hosted on a `http` you will need to add an exception for the server hosting the pdf in the ios `info.plist`. Here is an example :  
@@ -121,7 +122,7 @@ v5.0.0 (**break change**)
 5. fix zoom (iOS SDK>=11)
 
 
-[[more]](https://github.com/wonday/react-native-pdf/releases)
+[[more]](https://github.com/wonday/react-native-pdf-rnfb/releases)
 
 ### Example
 
@@ -137,7 +138,7 @@ v5.0.0 (**break change**)
 import React from 'react';
 import { StyleSheet, Dimensions, View } from 'react-native';
 
-import Pdf from 'react-native-pdf';
+import Pdf from 'react-native-pdf-rnfb';
 
 export default class PDFExample extends React.Component {
     render() {
@@ -231,3 +232,7 @@ const styles = StyleSheet.create({
 | `{uri:"bundle-assets://xxx.pdf"}` | load pdf from assets, you must add pdf to project by xcode. this does not support folder. | ✔ | ✖ |
 | `{uri:"base64data"}` | load pdf from base64 string | ✔   | ✔ |
 | `{uri:"file:///absolute/path/to/xxx.pdf"}` | load pdf from local file system | ✔   | ✔ |
+
+### All direct reserved
+    Author: https://github.com/wonday
+    Forked By: https://github.com/wonday/react-native-pdf 

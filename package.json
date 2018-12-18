@@ -1,5 +1,5 @@
 {
-    "name": "react-native-pdf",
+    "name": "react-native-pdf-rnfb",
     "version": "5.0.10",
     "summary": "A react native PDF view component",
     "description": "A react native PDF view component, support ios and android platform",
@@ -7,7 +7,7 @@
     "typings": "./index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wonday/react-native-pdf.git"
+        "url": "git+https://github.com/erivaldodantas/react-native-pdf-rnfb.git"
     },
     "keywords": [
         "react-component",
@@ -19,19 +19,19 @@
         "viewer"
     ],
     "author": {
-        "name": "Wonday",
-        "url": "https://github.com/wonday"
+        "name": "Erivaldo Dantas",
+        "url": "https://github.com/erivaldodantas"
     },
     "license": "MIT",
-    "homepage": "https://github.com/wonday/react-native-pdf",
+    "homepage": "https://github.com/erivaldodantas/react-native-pdf-rnfb",
     "bugs": {
-        "url": "https://github.com/wonday/react-native-pdf/issues"
+        "url": "https://github.com/erivaldodantas/react-native-pdf-rnfb/issues"
     },
     "dependencies": {
         "crypto-js": "^3.1.9-1",
         "prop-types": "^15.5.10"
     },
     "peerDependencies": {
-        "rn-fetch-blob": "^0.10.13"
+        "react-native-fetch-blob": "^0.10.8"
     }
 }
